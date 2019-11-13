@@ -4,7 +4,7 @@ Survey
     .applyTheme("default");
 
 var json = {
-    title: "Employmee Screening",
+    title: "Employee Screening",
     pages: [{
         questions: [
             {
