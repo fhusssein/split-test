@@ -4,37 +4,74 @@ Survey
     .applyTheme("default");
 
 var json = {
-    title: "American History",
+    title: "Employmee Screening",
     pages: [{
         questions: [
             {
-                type: "radiogroup",
-                name: "civilwar",
-                title: "When was the Civil War?",
-                choices: [
-                    "1750-1800", "1800-1850", "1850-1900", "1900-1950", "after 1950"
-                ],
-                correctAnswer: "1850-1900"
+                type: "text",
+                name: "name",
+                title: "Your name:"
             },
             {
-                type: "radiogroup",
-                name: "libertyordeath",
-                title: "Who said 'Give me liberty or give me death?'",
-                choicesOrder: "random",
-                choices: [
-                    "John Hancock", "James Madison", "Patrick Henry", "Samuel Adams"
-                ],
-                correctAnswer: "Patrick Henry"
+                type: "text",
+                name: "email",
+                title: "Your e-mail"
             },
             {
-                type: "radiogroup",
-                name: "magnacarta",
-                title: "What is the Magna Carta?",
-                choicesOrder: "random",
-                choices: [
-                    "The foundation of the British parliamentary system", "The Great Seal of the monarchs of England", "The French Declaration of the Rights of Man", "The charter signed by the Pilgrims on the Mayflower"
-                ],
-                correctAnswer: "The foundation of the British parliamentary system"
+                type: "rating",
+                name: "qualification",
+                title: "How qualified are you for this position?",
+                minRateDescription: "Not Qualified",
+                maxRateDescription: "Completely Qualified"
+            },
+            {
+                type: "rating",
+                name: "comfort",
+                title: "How comfortable are you with computers?",
+                minRateDescription: "Not Very Comfortable",
+                maxRateDescription: "Very Comfortable"
+            },
+            {
+                type: "rating",
+                name: "customer",
+                title: "How important is customer satisfaction to you?",
+                minRateDescription: "Not Important",
+                maxRateDescription: "Very Important"
+            },
+            {
+                type: "rating",
+                name: "stress",
+                title: "Rate your ability to handle stressful situations",
+                minRateDescription: "Weak",
+                maxRateDescription: "Perfect"
+            },
+            {
+                type : "boolean",
+                name : "bool 1",
+                title: "Question 7",
+                label: "Do you have reliable transportation?",
+                isRequired: true
+            },
+            {
+                type: "boolean",
+                name: "bool 2",
+                title: "Question 8",
+                label: "Do you have a valid driver’s license?",
+                isRequired : true
+            },
+            {
+                type: "boolean",
+                name: "bool 3",
+                title: "Question 9",
+                label: "Do you have a degree Computer Science?",
+                isRequired: true
+            },
+            {
+                 type: "boolean",
+                 name: "bool 4",
+                 title: "Question 10",
+                 label: "Are you willing to travel as required",
+                 isRequired: true
             }
         ]
     }],
