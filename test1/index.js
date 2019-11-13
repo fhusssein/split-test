@@ -11,33 +11,43 @@ var json = {
                 {
                     type: "text",
                     name: "name",
-                    title: "Your name:"
+                    title: "Your name:",
+                    isRequired: true
                 },
                 {
                     type: "text",
                     name: "email",
-                    title: "Your e-mail"
+                    title: "Your e-mail",
+                    isRequired: true,
+                    validators: [
+                    {
+                        type: "email"
+                    }
+                ]
                 },
                 {
                     type: "rating",
                     name: "qualification",
                     title: "How qualified are you for this position?",
                     minRateDescription: "Not Qualified",
-                    maxRateDescription: "Completely Qualified"
+                    maxRateDescription: "Completely Qualified",
+                    isRequired: true
                 },
                 {
                     type: "rating",
                     name: "comfort",
                     title: "How comfortable are you with computers?",
                     minRateDescription: "Not Very Comfortable",
-                    maxRateDescription: "Very Comfortable"
+                    maxRateDescription: "Very Comfortable",
+                    isRequired: true
                 },
                 {
                     type: "rating",
                     name: "customer",
                     title: "How important is customer satisfaction to you?",
                     minRateDescription: "Not Important",
-                    maxRateDescription: "Very Important"
+                    maxRateDescription: "Very Important",
+                    isRequired: true
                 }
             ]
         },  {
@@ -47,7 +57,8 @@ var json = {
                     name: "stress",
                     title: "Rate your ability to handle stressful situations",
                     minRateDescription: "Weak",
-                    maxRateDescription: "Perfect"
+                    maxRateDescription: "Perfect",
+                    isRequired: true
                 },
                 {
                     type : "boolean",
